@@ -1,0 +1,33 @@
+---
+- name: update node1 server
+  hosts: node1
+
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/centos/new_dir_1
+      state: directory
+
+
+- name: update node2 server
+  hosts: node2
+
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/centos/new_dir_2
+      state: directory
+
+
+- name: update group1 server
+  hosts: g1
+
+
+  tasks:
+  - name: Create Directory
+    file:
+      path: /home/centos/new_dir_group
+      state: directory
+...
