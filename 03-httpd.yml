@@ -1,0 +1,23 @@
+---
+- name: install httpd in n2 server
+  hosts: n2
+  become: yes
+
+
+  tasks:
+  - name: install httpd
+    yum:
+      name: httpd
+      state: present
+
+
+  - name: start httpd
+    service:
+      name: httpd
+      state: started
+
+
+  - name: start httpd
+    service:
+      name: httpd
+      enabled: true
