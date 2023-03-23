@@ -1,11 +1,11 @@
 ---
 
-- name: clone webapp
+- name: mainenance
   hosts: node3
   become: yes
 
   tasks:
-  - name: install git
+  - name: maintenance message
     copy:
       src: maintenance.html
       dest: /var/www/html/index.html
