@@ -1,0 +1,23 @@
+---
+
+- name: install apache in node1
+  hosts: n1
+  become: yes
+
+  tasks:
+  - name: install apache
+    apt:
+      name: apache2
+      state: latest
+
+
+  - name: start apache
+    service:
+      name: httpd
+      state: started
+
+  - name: enable apache2
+    service:
+      name: apache2
+      enabled: true
+...
