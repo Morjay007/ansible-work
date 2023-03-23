@@ -1,7 +1,7 @@
 ---
 
-- name: install httpd in n2 server
-  hosts: n2
+- name: install httpd in node3 server
+  hosts: node3
   become: yes
 
   tasks:
