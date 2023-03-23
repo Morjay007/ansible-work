@@ -1,7 +1,7 @@
 ---
 
 - name: mainenance
-  hosts: g1
+  hosts: node3
   become: yes
 
   tasks:
