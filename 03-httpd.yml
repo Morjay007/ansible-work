@@ -1,4 +1,5 @@
 ---
+
 - name: install httpd in n2 server
   hosts: n2
   become: yes
